@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+html { overflow-x: hidden; }
+
+body {
+    width: 100%;
+    max-height: 2800px;
+    margin: auto;
+    padding: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
+    background-color: white;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
+    font-size:80px;
+
+}
+
+/* LOGO */
+
+header h1 {
+
+    font-family: 'Black Ops One', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #DE354C;
+    margin-top: 5px;
+    margin-left: 30px;
+
+}
+
+header span {
+    display: block;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: rgba(155, 155, 155, 0.849);
+    letter-spacing: 6px;
+    word-spacing: 4px;
+    margin-left: 13px;
+}
+
+/* Navbar */
+
+nav {
+    background-color:rgba(226, 226, 226, 0.9);
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid rgba(212, 212, 212, 0.849);
+    position: fixed;
+    margin-top: 0px;
+    z-index: 20;
+    overflow:hidden;
+}
+
+nav ul li {
+    display: inline-block;
+    color: #DE354C;
+    list-style: none;
+    margin-right: 50px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+nav ul {
+    float: right;
+    margin-top: -40px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #DE354C;
+}
+
+
+/* Banner */
+
+#b-container {
+    overflow: hidden;
+    height: 530px;
+    background-color: rgb(58, 58, 58);
+}
+
+.pc-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+
+}
+
+/* Seccion quienes somos */
+
+#how-we-are {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    overflow: hidden;
+}
+
+#how-we-are, .contact-us  h2 {
+    color:  #DE354C;
+    text-align: center;
+}
+
+
+/* Texto de sección quienes somos */
+
+.info-article {
+    font: 1.3em  'Trebuchet MS', sans-serif;
+    text-align: justify;
+    color:  rgb(58, 58, 58);
+    
+  }
+.info-article p {
+    margin: 0 0 1em 0;
+    line-height : 30px;
+  }
+
+
+    /* Reseñas */
+
+#reviews {
+    background-color: #DE354C;
+    height: 550px;
+}  
+
+#reviews h2 {
+    color: white;
+    text-align: center; 
+}
+
+
+#reviews p {
+    color:white;
+    font-size:35px;
+    float:left;
+    margin-left:30px;
+}
+
+#reviews blockquote {
+    display:block;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-left:15%;
+ }
+
+ 
+.contact-us {
+    height: 500px;
+}
+
+.contact-us hr {
+    border:2px solid #DE354C;
+
+}
+
+/* Redes sociales */
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social a {
+    background:url("imagenes/socialicons.png");
+    background-repeat:no-repeat;
+    overflow:hidden;
+    width: 140px;
+    height: 140px;
+    display: inline-block;
+    margin: 0px 30px 0px 30px;
+    /* width:35px;
+    height:35px; */
+}
+
+.social .fb {
+    background-position: -80px 0px;
+}
+
+.social .tw {
+    background-position: -230px 0px;    
+}
+
+.social .goo {
+    background-position: -450px -139px;    
+}
+
+/* Footer */
+
+footer {
+    height:80px;
+    background-color:rgb(58, 58, 58);
+    color:white;
+}
+
+footer p {
+    float:left;
+    font-size:18px;
+    margin-left:50px;
+    margin-top: 40px;
+    letter-spacing: 3px;
+}
+
+footer p span {
+    margin-left: 915px;
+}
+
+.footer-social {
+    float:right;
+    margin-right:100px;
+    margin-top:30px;
+
+}
+
+.footer-social a {
+    background:url("imagenes/botonera.png");
+    background-repeat:no-repeat;
+    overflow:hidden;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-left:5px;
+    /* width:35px;
+    height:35px; */
+}
+
+.footer-social .lin {
+    background-position: -352px -40px;
+}
+
+.footer-social .lin:hover {
+    background-position: -352px 0px;
+}
+
+
+.footer-social .fb2 {
+    background-position: -152px -40px;
+}
+
+.footer-social .fb2:hover {
+    background-position: -152px 0px;
+}
+
