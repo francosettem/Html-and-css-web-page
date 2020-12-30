@@ -7,8 +7,8 @@ html { overflow-x: hidden; }
 body {
     width: 100%;
     max-height: 2800px;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     overflow-x:hidden;
     background-color: white;
@@ -29,38 +29,44 @@ header h1 {
     text-transform: uppercase;
     font-size: 40px;
     color: #DE354C;
-    margin-top: 5px;
-    margin-left: 30px;
 
 }
 
 header span {
-    display: block;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
     text-transform: uppercase;
-    color: rgba(155, 155, 155, 0.849);
     letter-spacing: 6px;
     word-spacing: 4px;
     margin-left: 13px;
+    color: rgba(155, 155, 155, 0.849);
+    display:block;
 }
 
 /* Navbar */
 
 nav {
-    background-color:rgba(226, 226, 226, 0.9);
+    position: fixed;
+    z-index: 20;
+    display:flex;
+    align-items: center;
     width: 100%;
     height: 110px;
+    background-color:rgba(226, 226, 226, 0.9);
     border-bottom: 1px solid rgba(212, 212, 212, 0.849);
-    position: fixed;
     margin-top: 0px;
-    z-index: 20;
     overflow:hidden;
 }
 
+nav ul {
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content:flex-end;
+}
+
 nav ul li {
-    display: inline-block;
     color: #DE354C;
     list-style: none;
     margin-right: 50px;
@@ -68,10 +74,6 @@ nav ul li {
     word-spacing: 5px;
 }
 
-nav ul {
-    float: right;
-    margin-top: -40px;
-}
 
 nav li a {
     text-decoration: none;
@@ -82,9 +84,10 @@ nav li a {
 /* Banner */
 
 #b-container {
-    overflow: hidden;
-    height: 530px;
     background-color: rgb(58, 58, 58);
+    height: 530px;
+    overflow: hidden;
+    pointer-events: none;
 }
 
 .pc-icon {
@@ -112,14 +115,13 @@ nav li a {
 /* Texto de sección quienes somos */
 
 .info-article {
-    font: 1.3em  'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     text-align: justify;
     color:  rgb(58, 58, 58);
     
   }
 .info-article p {
-    margin: 0 0 1em 0;
-    line-height : 30px;
+    line-height: 30px;
   }
 
 
@@ -127,7 +129,7 @@ nav li a {
 
 #reviews {
     background-color: #DE354C;
-    height: 550px;
+    height: 490px;
 }  
 
 #reviews h2 {
@@ -135,22 +137,23 @@ nav li a {
     text-align: center; 
 }
 
+#reviews div {
+    float:left; 
+    display:inline; 
+    width: 100%;
+}
 
 #reviews p {
     color:white;
     font-size:35px;
-    float:left;
-    margin-left:30px;
 }
 
-#reviews blockquote {
-    display:block;
-    justify-content: center;
-    align-items: center;
+
+ blockquote {
     width: 75%;
     margin-bottom: 40px;
-    margin-top: 60px;
     margin-left:15%;
+    margin-top:-90px;
  }
 
  
