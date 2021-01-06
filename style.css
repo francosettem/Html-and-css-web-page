@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
-html { overflow-x: hidden; }
+html { overflow-x: hidden;
+        font-size:62.5%; }
 
 body {
     width: 100%;
-    max-height: 2800px;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,10 +16,57 @@ body {
 
 h2 {
     font-family: 'Lobster', cursive;
-    letter-spacing: 5px;
-    font-size:80px;
-
+    text-align: center; 
+    font-size:8rem;
 }
+
+
+/* Color de títulos h2 en distintas secciones */
+
+#how-we-are h2, .contact-us  h2 {
+    color:  #DE354C;
+}
+
+#reviews h2 {
+    color: white;
+}
+
+
+/* Navbar */
+
+nav {
+    display:flex;
+    position: fixed;
+    align-items: center;
+    overflow:hidden;
+    background-color:rgba(226, 226, 226, 0.9);
+    border-bottom: 0.1rem solid rgba(212, 212, 212, 0.849);
+    height: 11em;
+    width: 100%;
+    z-index: 20;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex:1;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    color: #DE354C;
+    font-size:1.6em;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.5rem;
+    margin-right: 5rem;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+}
+
 
 /* LOGO */
 
@@ -27,65 +74,27 @@ header h1 {
 
     font-family: 'Black Ops One', cursive;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 4rem;
     color: #DE354C;
 
 }
 
 header span {
-    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 19px;
+    text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 6px;
-    word-spacing: 4px;
-    margin-left: 13px;
     color: rgba(155, 155, 155, 0.849);
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    margin-left: 1rem;
     display:block;
 }
-
-/* Navbar */
-
-nav {
-    position: fixed;
-    z-index: 20;
-    display:flex;
-    align-items: center;
-    width: 100%;
-    height: 110px;
-    background-color:rgba(226, 226, 226, 0.9);
-    border-bottom: 1px solid rgba(212, 212, 212, 0.849);
-    margin-top: 0px;
-    overflow:hidden;
-}
-
-nav ul {
-    display: flex;
-    flex:1;
-    align-items: center;
-    justify-content:flex-end;
-}
-
-nav ul li {
-    color: #DE354C;
-    list-style: none;
-    margin-right: 50px;
-    letter-spacing: 3px;
-    word-spacing: 5px;
-}
-
-
-nav li a {
-    text-decoration: none;
-    color: #DE354C;
-}
-
 
 /* Banner */
 
 #b-container {
     background-color: rgb(58, 58, 58);
-    height: 530px;
+    height: 53rem;
     overflow: hidden;
     pointer-events: none;
 }
@@ -94,34 +103,26 @@ nav li a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 60px;
+    margin-top: 6rem;
 
 }
 
 /* Seccion quienes somos */
 
 #how-we-are {
-    max-width: 1000px;
-    margin: 0 auto 50px;
-    overflow: hidden;
+    max-width: 100rem;
+    margin: 0 auto;
 }
 
-#how-we-are, .contact-us  h2 {
-    color:  #DE354C;
-    text-align: center;
-}
-
-
-/* Texto de sección quienes somos */
-
-.info-article {
+#how-we-are article {
     font-family: 'Trebuchet MS', sans-serif;
-    text-align: justify;
-    color:  rgb(58, 58, 58);
-    
-  }
-.info-article p {
-    line-height: 30px;
+}
+
+#how-we-are article p {
+    text-align: left;
+    font-size:2rem;
+    line-height: 4rem;
+    color: rgb(58, 58, 58);
   }
 
 
@@ -129,44 +130,19 @@ nav li a {
 
 #reviews {
     background-color: #DE354C;
-    height: 490px;
+    height: 60rem;
 }  
-
-#reviews h2 {
-    color: white;
-    text-align: center; 
-}
-
-#reviews div {
-    float:left; 
-    display:inline; 
-    width: 100%;
-}
 
 #reviews p {
     color:white;
-    font-size:35px;
-}
-
-
- blockquote {
-    width: 75%;
-    margin-bottom: 40px;
-    margin-left:15%;
-    margin-top:-90px;
- }
-
- 
-.contact-us {
-    height: 500px;
-}
-
-.contact-us hr {
-    border:2px solid #DE354C;
-
+    font-size:3.5rem;
 }
 
 /* Redes sociales */
+
+.contact-us {
+    height: 50rem;
+}
 
 .social {
     display: flex;
@@ -178,12 +154,10 @@ nav li a {
     background:url("imagenes/socialicons.png");
     background-repeat:no-repeat;
     overflow:hidden;
-    width: 140px;
-    height: 140px;
+    width: 14rem;
+    height: 14rem;
     display: inline-block;
-    margin: 0px 30px 0px 30px;
-    /* width:35px;
-    height:35px; */
+    margin: 0 3rem 0 3rem;
 }
 
 .social .fb {
@@ -201,27 +175,20 @@ nav li a {
 /* Footer */
 
 footer {
-    height:80px;
+    height:8rem;
     background-color:rgb(58, 58, 58);
     color:white;
 }
 
 footer p {
     float:left;
-    font-size:18px;
-    margin-left:50px;
-    margin-top: 40px;
+    font-size:1.8rem;
+    margin-left:0.5rem;
     letter-spacing: 3px;
-}
-
-footer p span {
-    margin-left: 915px;
 }
 
 .footer-social {
     float:right;
-    margin-right:100px;
-    margin-top:30px;
 
 }
 
