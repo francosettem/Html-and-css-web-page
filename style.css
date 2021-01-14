@@ -334,7 +334,24 @@ footer p {
     }
 
     .redesSociales a {
-        margin: 0;
+        background:url("imagenes/responsive/social.png");
+        width: 5.7rem;
+        height: 5.7rem;
+        margin: 0 1rem 0 1rem;
+    }
+    
+    /* DEFINIENDO POSICIÓN DE LA IMAGEN PARA CADA BOTON */
+    
+    .redesSociales .fb {
+        background-position: -207px -80px;
+    }
+    
+    .redesSociales .tw {
+        background-position: -69px -80px;    
+    }
+    
+    .redesSociales .goo {
+        background-position: -139px -383px;    
     }
 
 }
