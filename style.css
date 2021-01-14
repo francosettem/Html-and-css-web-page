@@ -1,8 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+/* font-family: 'Noto Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+/*  font-family: 'Lobster', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+/* font-family: 'Lora', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+/* font-family: 'Copse', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Copse&display=swap');
+/* font-family: 'Libre Baskerville', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* CSS RESET */
 
 html { overflow-x: hidden;
+        /* 1rem = 10px */
         font-size:62.5%; }
 
 body {
@@ -10,147 +23,203 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    overflow-x:hidden;
-    background-color: white;
+    background-color:rgb(10,10,10);
+}
+
+/* FONT-SIZE */
+
+p,span,nav {
+    font-size: 1.6rem;
+}
+
+blockquote {
+    font-size: 2rem;
 }
 
 h2 {
+    text-align: center;
     font-family: 'Lobster', cursive;
-    text-align: center; 
     font-size:8rem;
+    margin: 0 auto;
 }
 
-
-/* Color de títulos h2 en distintas secciones */
-
-#how-we-are h2, .contact-us  h2 {
-    color:  #DE354C;
-}
-
-#reviews h2 {
-    color: white;
-}
-
-
-/* Navbar */
-
-nav {
-    display:flex;
-    position: fixed;
-    align-items: center;
-    overflow:hidden;
-    background-color:rgba(226, 226, 226, 0.9);
-    border-bottom: 0.1rem solid rgba(212, 212, 212, 0.849);
-    height: 11em;
-    width: 100%;
-    z-index: 20;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    flex:1;
-    justify-content:flex-end;
-    align-items: center;
-}
-
-nav ul li {
-    color: #DE354C;
-    font-size:1.6em;
-    letter-spacing: 0.3rem;
-    word-spacing: 0.5rem;
-    margin-right: 5rem;
-}
-
-
-nav ul li a {
-    text-decoration: none;
-}
 
 
 /* LOGO */
 
-header h1 {
+header {
+    position: fixed;
+    overflow:hidden;
+    background-color:rgba(0,0,0, 0.9);
+    border-bottom: 0.1rem solid white;
+    width: 100%;
+    z-index: 20;
+    /* Flexbox */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    font-family: 'Black Ops One', cursive;
-    text-transform: uppercase;
+header .logo {
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: capitalize;
+    color:#DE354C;
     font-size: 4rem;
-    color: #DE354C;
-
 }
 
-header span {
-    font-family: Arial, Helvetica, sans-serif;
+header .logo span {
+    font-size: 4rem;
+    color: white;
+}
+
+/* NAV */
+
+header nav {
+    text-align: center;
+    margin-right: 1rem;
+    border: 1px solid white;
+    /* Flexbox */
+    display: flex;
+}
+
+header nav a {
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    text-transform: uppercase;
-    color: rgba(155, 155, 155, 0.849);
-    font-size: 2rem;
-    letter-spacing: 0.5rem;
-    margin-left: 1rem;
-    display:block;
+    color: white;
+    padding: 1rem;
+    background:rgb(177,42,60);
 }
 
-/* Banner */
+header nav a:hover {
+    background:#DE354C;
+}
 
-#b-container {
+
+/* INICIO/BANNER */
+
+#contenedorDeImagen {
     background-color: rgb(58, 58, 58);
-    height: 53rem;
     overflow: hidden;
     pointer-events: none;
+    border-bottom: 0.1rem solid white;
 }
 
-.pc-icon {
+.ImagenPc {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 6rem;
-
+    margin: 2rem auto 0 auto;
 }
 
-/* Seccion quienes somos */
+.imagenMobile {
+    display: none;
+}
 
-#how-we-are {
+/* SECCIÓN QUIENES SOMOS */
+
+#quienesSomos {
+    /* PADDING PARA SEPARAR UN POCO LAS SECCIONES */
+    padding-bottom: 5rem;
+}
+
+#quienesSomos h2 {
+    color: white;
+    margin: 5rem 0 5rem 0;
+}
+
+#quienesSomos article {
+    color:white;
+    background-color:  rgb(58, 58, 58);
     max-width: 100rem;
-    margin: 0 auto;
+    margin:0 auto;
+    padding: 1rem 3rem 0 3rem;
+    border-radius: 6rem 6rem 3rem 0;
+    border:0.5rem solid white;
 }
 
-#how-we-are article {
-    font-family: 'Trebuchet MS', sans-serif;
-}
-
-#how-we-are article p {
-    text-align: left;
+#quienesSomos article p {
+    font-family:'Libre Baskerville', serif;
     font-size:2rem;
-    line-height: 4rem;
-    color: rgb(58, 58, 58);
+    line-height:4rem;
   }
 
 
-    /* Reseñas */
+    /* SECCIÓN RESEÑAS */
 
-#reviews {
-    background-color: #DE354C;
-    height: 60rem;
+#reseñas {
+    background-color:rgb(177,42,60);
+    border-top:0.1rem solid white;
+    text-align: center;
 }  
 
-#reviews p {
-    color:white;
+#reseñas h2 {
+    color: white;
+    margin: 5rem 0 5rem 0;
+}
+
+
+#reseñas p {
+    font-family: 'Copse', serif;
     font-size:3.5rem;
+    color:white;
 }
 
-/* Redes sociales */
+/* ESTILO BLOCKQUOTE */
 
-.contact-us {
-    height: 50rem;
+blockquote {
+    display: inline-block;
+    background: rgb(177,42,60);
+    background: linear-gradient(90deg, rgba(177,42,60,1) 6%, rgba(255,233,233,1) 58%, rgba(255,255,255,1) 100%);
+    border-right: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    font-family: 'Lora', serif;
+    text-align: center;
+    line-height: 3.5rem;
+  }
+  blockquote:before {
+    color: white;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    
+  }
+
+  blockquote:after {
+    color: #DE354C;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+  blockquote p {
+    display: inline;
+  }
+
+/* SECCIÓN REDES SOCIALES */
+
+#contactanos {
+    padding-bottom: 5rem;
+    border-top: 0.1rem solid white;
 }
 
-.social {
+#contactanos h2 {
+    color: white;
+    margin: 5rem 0 5rem 0;
+}
+
+.redesSociales {
+    /* Flexbox */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.social a {
+.redesSociales a {
     background:url("imagenes/socialicons.png");
     background-repeat:no-repeat;
     overflow:hidden;
@@ -160,64 +229,112 @@ header span {
     margin: 0 3rem 0 3rem;
 }
 
-.social .fb {
+/* DEFINIENDO POSICIÓN DE LA IMAGEN PARA CADA BOTON */
+
+.redesSociales .fb {
     background-position: -80px 0px;
 }
 
-.social .tw {
+.redesSociales .tw {
     background-position: -230px 0px;    
 }
 
-.social .goo {
+.redesSociales .goo {
     background-position: -450px -139px;    
 }
 
-/* Footer */
+/* FOOTER */
 
 footer {
-    height:8rem;
-    background-color:rgb(58, 58, 58);
+    background-color:rgb(10,10,10);
+    border-top:0.1rem solid white;
     color:white;
+    /* FLEXBOX */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer p {
-    float:left;
-    font-size:1.8rem;
+    font-family: 'Roboto', sans-serif;
     margin-left:0.5rem;
-    letter-spacing: 3px;
-}
-
-.footer-social {
-    float:right;
-
-}
-
-.footer-social a {
-    background:url("imagenes/botonera.png");
-    background-repeat:no-repeat;
-    overflow:hidden;
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    margin-left:5px;
-    /* width:35px;
-    height:35px; */
-}
-
-.footer-social .lin {
-    background-position: -352px -40px;
-}
-
-.footer-social .lin:hover {
-    background-position: -352px 0px;
 }
 
 
-.footer-social .fb2 {
-    background-position: -152px -40px;
-}
+/* MEDIA QUERIES */
 
-.footer-social .fb2:hover {
-    background-position: -152px 0px;
-}
+@media screen and (max-width:768px) {
 
+    /* FORMATEO DEL TEXTO MOBILE */
+    h2 {
+        font-family: 'Lobster', cursive;
+        text-align: center; 
+        font-size:4rem;
+        margin: 0;
+    }
+    
+    p,span,nav {
+        font-size: 1.6rem;
+    }
+    
+    blockquote {
+        font-size: 1.6rem;
+    }
+
+    /* HEADER Y NAV RESPONSIVE */
+
+    header {
+        position: static;
+        justify-content: center;
+    }
+    header nav {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    header nav a {
+        flex-grow: 1;
+    }
+
+    /* BANNER */
+
+    #contenedorDeImagen {
+        background-color: black;
+    }
+    
+    .ImagenPc {
+        display: none;
+    }
+
+    .imagenMobile {
+        display: block;
+        margin: 2rem auto 2rem auto;
+    }
+
+    /* Quienes Somos  */
+
+    #quienesSomos article {
+        text-align: center;
+        margin:0 auto;
+        border:none;
+        line-height:auto;
+        padding: 0;
+        border-radius: 0;
+        max-width: 100%;
+        background-color: rgb(10,10,10);
+    }
+    
+    #quienesSomos article p {
+        font-size:1.6rem;
+        font-family:'Libre Baskerville', serif;
+      }
+    
+    #reseñas p {
+        font-size:2rem;
+    }
+
+    .redesSociales a {
+        margin: 0;
+    }
+
+}
